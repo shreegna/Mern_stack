@@ -7,4 +7,4 @@ const employee = {
 }
 console.log(employee.address.city)
 employee.address.country = "India"
-console.log(employee)
+console.log(employee);

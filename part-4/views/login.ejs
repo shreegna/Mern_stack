@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Login Form</h2>
+    <% if (error) { %>
+<div><%= error  %></div>
+  <% } %>
+    
+    <form action="/login" method="POST">
+      <p><input type="text" placeholder="Email" name="email"/></p>
+      <p><input type="password" placeholder="Password" name="password" /></p>
+      <p><button>Login</button></p>
+      New user can <a href="/register"> Register</a> here!
+    </form>
+  </body>
+</html>

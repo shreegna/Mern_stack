@@ -12,9 +12,10 @@ let customers = [
     transactions: [],
   },
 ];
+
 function checkBalance(id) {
   const customer = customers.find((customer) => customer.id === id);
-  console.log(customer);
+  console.log(customer)
 }
 
 function deposit(id, amount) {
@@ -63,8 +64,10 @@ function withdraw(id, amount) {
     }
   });
 }
+
 function showTransactions(id){
-  const customer = customers.find((customer) => customer.id === id);
-  console.log(customer.transactions)
+const customer = customers.find(customer=>customer.id===id)
+console.table(customer.transactions)
 }
-export {checkBalance,withdraw,deposit,showTransactions}
+
+export {deposit,withdraw,checkBalance,showTransactions}
